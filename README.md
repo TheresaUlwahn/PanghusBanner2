@@ -1,4 +1,4 @@
-# PanghusBanner2
+# Panghus Banner 2
 HTML5-banner for Panghus
 
 Företag Panghus
@@ -17,4 +17,4 @@ Call to action knapp Läs mer och anmäla ditt intresse
 
 Storlek 300x250
 
-Storlekar 320x320, 250x600 
+
