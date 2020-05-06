@@ -14,9 +14,9 @@
     <!-- Place your style and other resourcer under this line -->
     <link rel="stylesheet" href="./panghus.css">
     <title>Panghus Ljungsbro Ängar - 300x250</title>  
-    </head>
+  </head>
+  
   <body>
-
     <!-- Place your html under this line -->
     <section id="click-me" class="banner">
       <div class="panghusLogo">
@@ -40,37 +40,37 @@
 
         // Run function when page loads
         window.onload=changeImg;
-        });
+      });
 
-        var i = 0; 			// Start Point
-        var images = [];	// Images Array
-        var time = 3000;	// Time Between Switch
-          
-        // Image List
-        images[0] = "./assets/Hus1.jpg";
-        images[1] = "./assets/Hus2.jpg";
-        // images[2] = "./assets/Kedjehuset_2.jpg";
-        // images[3] = "./assets/radhusbaksida.jpg";
+      var i = 0; 			// Start Point
+      var images = [];	// Images Array
+      var time = 3000;	// Time Between Switch
+        
+      // Image List
+      images[0] = "./assets/Hus1.jpg";
+      images[1] = "./assets/Hus2.jpg";
+      // images[2] = "./assets/Kedjehuset_2.jpg";
+      // images[3] = "./assets/radhusbaksida.jpg";
 
-        // Change Image
-        function changeImg(){
-          document.slide.src = images[i];
+      // Change Image
+      function changeImg(){
+        document.slide.src = images[i];
 
-          // Check If Index Is Under Max
-          if(i < images.length - 1){
-            // Add 1 to Index
-            i++; 
-          } else { 
-            // Reset Back To O
-            i = 0;
-          }
-
-          setTimeout("changeImg()", time);
+        // Check If Index Is Under Max
+        if(i < images.length - 1){
+          // Add 1 to Index
+          i++; 
+        } else { 
+          // Reset Back To O
+          i = 0;
         }
 
-        document.getElementById("click-me").onclick = function() {
-          window.open(html5.getClickTag(), "_blank");
-        }
+        setTimeout("changeImg()", time);
+      }
+
+      document.getElementById("click-me").onclick = function() {
+        window.open(html5.getClickTag(), "_blank");
+      }
     </script>
   </body>
 </html>
